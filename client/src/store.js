@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////
 // Copyright (c) Autodesk, Inc. All rights reserved
-// Written by Forge Partner Development
+// Written byAPS Partner Development
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted,
@@ -16,10 +16,10 @@
 // UNINTERRUPTED OR ERROR FREE.
 /////////////////////////////////////////////////////////////////////
 
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -28,41 +28,41 @@ export default new Vuex.Store({
     isUserLoggedIn: false,
     user: {
       fullName: null,
-      picture: null
-    }
+      picture: null,
+    },
   },
   mutations: {
-    setContractNumber (state, contractNumber) {
-      state.contractNumber = contractNumber
+    setContractNumber(state, contractNumber) {
+      state.contractNumber = contractNumber;
     },
-    setUser (state, user) {
-      state.user = user
+    setUser(state, user) {
+      state.user = user;
     },
-    setUserFullName (state, fullName) {
-      state.user.fullName = fullName
+    setUserFullName(state, fullName) {
+      state.user.fullName = fullName;
     },
-    setUserPicture (state, pictureUri) {
-      state.user.picture = pictureUri
+    setUserPicture(state, pictureUri) {
+      state.user.picture = pictureUri;
     },
-    setLoading (state, loading) {
-      Object.assign(state.loading, loading)
-    }
+    setLoading(state, loading) {
+      Object.assign(state.loading, loading);
+    },
   },
   actions: {
-    setContractNumber ({ commit }, contractNumber) {
-      commit('setContractNumber', contractNumber)
+    setContractNumber({ commit }, contractNumber) {
+      commit("setContractNumber", contractNumber);
     },
-    setUser ({ commit }, user) {
-      commit('setUser', user)
+    setUser({ commit }, user) {
+      commit("setUser", user);
     },
-    setUserFullName ({ commit }, fullName) {
-      commit('setUserFullName', fullName)
+    setUserFullName({ commit }, fullName) {
+      commit("setUserFullName", fullName);
     },
-    setUserPicture ({ commit }, pictureUri) {
-      commit('setUserPicture', pictureUri)
+    setUserPicture({ commit }, pictureUri) {
+      commit("setUserPicture", pictureUri);
     },
-    setLoading ({ commit }, loading) {
-      commit('setLoading', loading)
-    }
-  }
-})
+    setLoading({ commit }, loading) {
+      commit("setLoading", loading);
+    },
+  },
+});

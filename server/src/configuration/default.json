@@ -2,9 +2,9 @@
   "favicon": "/public/favicon.ico",
   "oauth2": {
     "authorizationURL": "https://developer.api.autodesk.com/authentication/v1/authorize",
-    "clientID": "<your Forge app ID>",
-    "clientSecret": "<your Forge app secret>",
-    "callbackURL": "<your host>/api/forge/callback/oauth",
+    "clientID": "<yourAPS app ID>",
+    "clientSecret": "<yourAPS app secret>",
+    "callbackURL": "<your host>/api/aps/callback/oauth",
     "tokenURL": "https://developer.api.autodesk.com/authentication/v1/gettoken"
   },
   "http_port": 5000,
@@ -18,7 +18,7 @@
     "rolling": false,
     "renew": false
   },
-  "GoogleAPIKey":"<your GoogleAPIKey>",
+  "GoogleAPIKey": "<your GoogleAPIKey>",
   "githubRepoUrl": "https://github.com/mazerab/consumption-reporting-vue-koa-app",
   "tlsversion": "TLSv1_2_method",
   "vuehost": "http://localhost:8080",

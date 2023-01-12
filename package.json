@@ -1,7 +1,7 @@
 {
   "name": "tokenflex-nodejs-report.webapp",
   "version": "1.0.0",
-  "description": "A Forge application to report on consumption data.",
+  "description": "A APS application to report on consumption data.",
   "main": "server/src/server.js",
   "dependencies": {
     "@koa/cors": "^2.2.2",
@@ -60,11 +60,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Autodesk-Forge/tokenflex-nodejs-report.webapp.git"
+    "url": "git+https://github.com/autodesk-platform-services/tokenflex-nodejs-report.webapp.git"
   },
   "keywords": [
     "Autodesk",
-    "Forge",
+    "APS",
     "Boilerplate",
     "Koa",
     "Javascript",
@@ -76,7 +76,7 @@
   "author": "Bastien Mazeran & Bryan Huang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Autodesk-Forge/tokenflex-nodejs-report.webapp/issues"
+    "url": "https://github.com/autodesk-platform-services/tokenflex-nodejs-report.webapp/issues"
   },
-  "homepage": "https://github.com/Autodesk-Forge/tokenflex-nodejs-report.webapp/"
+  "homepage": "https://github.com/autodesk-platform-services/tokenflex-nodejs-report.webapp/"
 }

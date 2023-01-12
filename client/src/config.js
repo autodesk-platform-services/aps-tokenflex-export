@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////
 // Copyright (c) Autodesk, Inc. All rights reserved
-// Written by Forge Partner Development
+// Written byAPS Partner Development
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted,
@@ -16,8 +16,11 @@
 // UNINTERRUPTED OR ERROR FREE.
 /////////////////////////////////////////////////////////////////////
 
-'use strict'
+"use strict";
 
 module.exports = {
-  koahost: process.env.VUE_APP_HEROKU_KOA_HOST === 'origin' ? location.origin : (process.env.VUE_APP_HEROKU_KOA_HOST || 'http://localhost:5000')
-}
+  koahost:
+    process.env.VUE_APP_HEROKU_KOA_HOST === "origin"
+      ? location.origin
+      : process.env.VUE_APP_HEROKU_KOA_HOST || "http://localhost:5000",
+};

@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////
 // Copyright (c) Autodesk, Inc. All rights reserved
-// Written by Forge Partner Development
+// Written byAPS Partner Development
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted,
@@ -16,25 +16,27 @@
 // UNINTERRUPTED OR ERROR FREE.
 /////////////////////////////////////////////////////////////////////
 
-import '@babel/polyfill'
-import Vue from 'vue'
-import './plugins/axios'
-import './plugins/vuetify'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import * as VueGoogleMaps from 'vue2-google-maps'
-const config = require(`../../config/${process.env.NODE_ENV === 'production' ? 'production' : 'default'}.json`)
+import "@babel/polyfill";
+import Vue from "vue";
+import "./plugins/axios";
+import "./plugins/vuetify";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import * as VueGoogleMaps from "vue2-google-maps";
+const config = require(`../../config/${
+  process.env.NODE_ENV === "production" ? "production" : "default"
+}.json`);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 Vue.use(VueGoogleMaps, {
   load: {
     key: process.env.GoogleAPIKey || config.GoogleAPIKey,
-    libraries: 'places'
-  }
-})
+    libraries: "places",
+  },
+});
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");

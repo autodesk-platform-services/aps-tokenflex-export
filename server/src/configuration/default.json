@@ -19,7 +19,7 @@
     "renew": false
   },
   "GoogleAPIKey": "<your GoogleAPIKey>",
-  "githubRepoUrl": "https://github.com/mazerab/consumption-reporting-vue-koa-app",
+  "githubRepoUrl": "https://github.com/autodesk-platform-services/aps-tokenflex-export",
   "tlsversion": "TLSv1_2_method",
   "vuehost": "http://localhost:8080",
   "API_host": "https://developer.api.autodesk.com/tokenflex/v1",

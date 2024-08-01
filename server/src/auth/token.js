@@ -29,9 +29,9 @@ class Token {
   getOAuthTemplate() {
     return {
       authentication: {
-        authorizationUrl: "/authentication/v1/authorize",
-        tokenUrl: "/authentication/v1/gettoken",
-        refreshTokenUrl: "/authentication/v1/refreshtoken",
+        authorizationUrl: "/authentication/v2/authorize",
+        tokenUrl: "/authentication/v2/token",
+        refreshTokenUrl: "/authentication/v2/token",
         scopes: {
           "data:read":
             "The application will be able to read the end user’s data within the Autodesk ecosystem.",
